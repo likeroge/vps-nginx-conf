@@ -25,5 +25,5 @@ jobs:
           ssh-private-key: ${{ secrets.AUTH_SSH }}
       - name: Deploy to VPS
         run: | 
-          ssh -o StrictHostKeyChecking=no egor@185.250.44.151 'cd dev/vps-nginx-conf && git pull && docker compose pull && docker-compose down &&  docker-compose up -d --build'
+          ssh -o StrictHostKeyChecking=no egor@185.250.44.151 'cd dev/vps-nginx-conf && git pull && docker-compose pull && docker-compose down &&  docker-compose up -d --build'
 
