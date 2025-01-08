@@ -3,6 +3,8 @@ version: '3.8'
 services:
   nginx-conf:
     image: nginx:alpine
+    networks:
+      - app_network
     ports:
       - "80:80"
     volumes:
