@@ -10,6 +10,7 @@ services:
     volumes:
       - ./default.conf:/etc/nginx/conf.d/default.conf
       - ~/dev/antarctic-front/dist/spa/:/quasar-app/
+      - ./docker-compose.yml:/docker-compose.yml
 
 networks:
   antarctic-app:
