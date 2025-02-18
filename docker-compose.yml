@@ -9,9 +9,9 @@ services:
       - antarctic-app
     volumes:
       - ./default.conf:/etc/nginx/conf.d/default.conf
-      - ~/dev/antarctic-front/dist/spa/:/quasar-app/
+      # - ~/dev/antarctic-front/dist/spa/:/quasar-app/
+      - ~/dev/MongoWebApi/publish/wwwroot/:/blazor-mongo-app/
 
 networks:
   antarctic-app:
     external: true
-    # driver: bridge
